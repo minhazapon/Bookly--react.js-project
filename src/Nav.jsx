@@ -10,12 +10,30 @@ const Nav = () => {
 
 
     const navbar = <>
+      
+      <div className=" flex-col md:flex-row lg:flex-row flex items-center gap-10">
+
+        <div className=" flex-col md:flex-row lg:flex-row  flex items-center gap-1">
+
+          <li className=" font-mono" ><NavLink to='/' >HOME</NavLink></li>
+          <li className=" font-mono" ><NavLink to='/about' >ABOUT</NavLink></li>
+          <li className=" font-mono" ><NavLink to='/shop' >SHOP</NavLink></li>
+          <li className=" font-mono" ><NavLink to='/blogs' >BLOGS</NavLink></li>
+          <li className=" font-mono" ><NavLink to='/contact' >CONTACT</NavLink></li>
+
+        </div>
+
+
+        <div className=" flex-col md:flex-row lg:flex-row  flex items-start gap-2">
+        <li><NavLink to='/search' ><img className=" h-[50px]" src="https://cdn-icons-gif.flaticon.com/16678/16678185.gif" alt="" /></NavLink></li>
+        <li><NavLink to='/search' ><img className=" h-[50px]" src="https://cdn-icons-gif.flaticon.com/8717/8717910.gif" alt="" /></NavLink></li>
+        <li><NavLink to='/search' ><img className=" h-[50px]" src="https://cdn-icons-gif.flaticon.com/9937/9937590.gif" alt="" /></NavLink></li>
+        <li><NavLink to='/search' ><img className=" h-[50px]" src="https://cdn-icons-gif.flaticon.com/15576/15576198.gif" alt="" /></NavLink></li>
+        </div>
+
+      </div>
+      
     
-      <li className=" font-mono" ><NavLink to='/' >HOME</NavLink></li>
-      <li className=" font-mono" ><NavLink to='/about' >ABOUT</NavLink></li>
-      <li className=" font-mono" ><NavLink to='/shop' >SHOP</NavLink></li>
-      <li className=" font-mono" ><NavLink to='/blogs' >BLOGS</NavLink></li>
-      <li className=" font-mono" ><NavLink to='/contact' >CONTACT</NavLink></li>
             
             
             
