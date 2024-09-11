@@ -4,468 +4,382 @@
 
 const Books = () => {
     return (
-        <div className=" mb-10 mt-20 ml-5 mr-5 ">
+        <div className=" mb-10 mt-10 ml-5 mr-5 ">
 
-            <div>
+			<div className="  flex-col md:flex-row lg:flex-row flex justify-center items-center gap-5 ">
 
-
-              <div className=" flex-col md:flex-row lg:flex-row   ">
-
-                 <div className=" grid  md:grid-cols-4  gap-5  ">
-
-                  
-                  <div className=" border-[1px] border-gray-400  rounded-xl ">
-                  <div className="flex flex-col w-[140px] p-6 space-y-4 sm:p-10   text-black">
-                        	<h2 className="text-2xl font-mono">Featured</h2>
-                        	<ul className="flex flex-col divide-y divide-gray-700">
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-30 h-20 dark:border- rounded outline-none sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item2.png" alt="Polaroid camera" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">Echoes of the Ancients</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">599.99€</p>
-                        							<p className="text-sm line-through text-gray-600">750.50€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
-
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item1.png" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">The Midnight Garden</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">999.95€</p>
-                        							<p className="text-sm line-through text-gray-600">1509€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
-
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item3.png" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">Shadow of the Serpent</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">888.99€</p>
-                        							<p className="text-sm line-through text-gray-600">1500.99€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
-
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        	</ul>
-                        </div>
-                  </div>
-
-                  {/* ------------------------------------------------- */}
+             
+			 <div className=" transition duration-300 ease-in-out hover:scale-110  border-[1px]  border-gray-300 p-5 rounded-xl ">
+			   <div>
+			   	<p className=" text-3xl font-thin mb-5">Featured</p>
+			   </div>
+			   <div>
+			   <div className=" flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item2.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Echoes of the<br></br> Ancients</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   <p className=" mt-5 bg-gray-400 h-[1px] w-[250px]"></p>
+			   </div>
+			   <div>
+			   <div className=" mt-5 flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item2.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Echoes of the<br></br> Ancients</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   <p className=" mt-5 bg-gray-400 h-[1px] w-[250px]"></p>
+			   </div>
+			   <div>
+			   <div className=" mt-5 flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item2.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Echoes of the<br></br> Ancients</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   </div>
+			 </div>
 
 
-                  <div className=" border-[1px] border-gray-400  rounded-xl  ">
-                  <div className="flex flex-col w-[140px] p-6 space-y-4 sm:p-10   text-black">
-                        	<h2 className="text-2xl text-[#2edbeb]  font-semibold font-mono">Latest items
-                            </h2>
-                        	<ul className="flex flex-col divide-y divide-gray-700">
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item4.png" alt="Polaroid camera" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">Whispe<br></br>ring Winds</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">599.99€</p>
-                        							<p className="text-sm line-through text-gray-600">750.50€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
 
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item5.png" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">The Forgotten Realm</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">999.95€</p>
-                        							<p className="text-sm line-through text-gray-600">1509€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
-
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item6.png" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">Moonlit Secrets</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">888.99€</p>
-                        							<p className="text-sm line-through text-gray-600">1500.99€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
-
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        	</ul>
-                        </div>
-                  </div>
-
-                  {/* ------------------------------------------------- */}
+            {/* ---------------------------1---------------------------------------- */}
 
 
-                  <div className=" border-[1px] border-gray-400  rounded-xl  ">
-                  <div className="flex flex-col w-[140px] p-6 space-y-4 sm:p-10   text-black">
-                        	<h2 className="text-2xl text-[#F72798] font-semibold font-mono">Best reviewed</h2>
-                        	<ul className="flex flex-col divide-y divide-gray-700">
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item7.png" alt="Polaroid camera" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">The Crystal Key</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">599.99€</p>
-                        							<p className="text-sm line-through text-gray-600">750.50€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
 
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item8.png" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">Starlight Sonata</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">999.95€</p>
-                        							<p className="text-sm line-through text-gray-600">1509€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
+			<div className=" transition duration-300 ease-in-out hover:scale-110 border-[1px] border-gray-300 p-5 rounded-xl ">
+			   <div>
+			   	<p className=" text-3xl font-thin mb-5">Latest items</p>
+			   </div>
+			   <div>
+			   <div className=" flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item4.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Whispering<br></br> Winds</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   <p className=" mt-5 bg-gray-400 h-[1px] w-[250px]"></p>
+			   </div>
+			   <div>
+			   <div className=" mt-5 flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item5.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">The Forgotten<br></br> Realm</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   <p className=" mt-5 bg-gray-400 h-[1px] w-[250px]"></p>
+			   </div>
+			   <div>
+			   <div className=" mt-5 flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item6.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Moonlit Secrets</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   </div>
+			 </div>
+            
 
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item9.png" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">Tales of the Enchant Forest</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">888.99€</p>
-                        							<p className="text-sm line-through text-gray-600">1500.99€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
 
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        	</ul>
-                        </div>
-                  </div>
-
-                  {/* ------------------------------------------------- */}
+			{/* ---------------2-------------------- */}
 
 
 
 
-                  <div className=" border-[1px] border-gray-400  rounded-xl  ">
-                  <div className="flex flex-col w-[140px] p-6 space-y-4 sm:p-10   text-black">
-                        	<h2 className="text-2xl text-[#7A1CAC] font-semibold font-mono">On sale</h2>
-                        	<ul className="flex flex-col divide-y divide-gray-700">
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item10.png" alt="Polaroid camera" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">The Phoenix Chronicl</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">599.99€</p>
-                        							<p className="text-sm line-through text-gray-600">750.50€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
 
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item11.png" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">Dreams of Avalon</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">999.95€</p>
-                        							<p className="text-sm line-through text-gray-600">1509€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
 
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                        			<div className="flex w-full space-x-2 sm:space-x-4">
-                        				<img className="flex-shrink-0 object-cover w-20 h-20 dark:border- rounded outline-none sm:w-32 sm:h-32 bg-gray-500" src="https://demo.templatesjungle.com/bookly/images/product-item12.png" />
-                        				<div className="flex flex-col justify-between w-full pb-4">
-                        					<div className="flex justify-between w-full pb-2 space-x-2">
-                        						<div className="space-y-1">
-                        							<h3 className="text-lg font-semibold leading-snug sm:pr-8">Legend of the Dragon Isles</h3>
-                        							<p className="text-sm text-gray-400">Top Seller</p>
-                        						</div>
-                        						<div className="text-right">
-                        							<p className="text-lg font-semibold">888.99€</p>
-                        							<p className="text-sm line-through text-gray-600">1500.99€</p>
-                        						</div>
-                        					</div>
-                                            <div>
-                                              <p className=" font-mono">Lauren Asher</p>
-                                              <div className=" mt-2 rating">
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input
-                                                 type="radio"
-                                                 name="rating-2"
-                                                 className="mask mask-star-2 bg-orange-400"
-                                                 defaultChecked />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                               <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                             </div>
+			<div className=" transition duration-300 ease-in-out hover:scale-110  border-[1px] border-gray-300 p-5  rounded-xl ">
+			   <div>
+			   	<p className=" text-3xl font-thin mb-5">Best reviewed</p>
+			   </div>
+			   <div>
+			   <div className=" flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item7.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">The Crystal Key</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   <p className=" mt-5 bg-gray-400 h-[1px] w-[250px]"></p>
+			   </div>
+			   <div>
+			   <div className=" mt-5 flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item8.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Starlight Sonata</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   <p className=" mt-5 bg-gray-400 h-[1px] w-[250px]"></p>
+			   </div>
+			   <div>
+			   <div className=" mt-5 flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item9.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Tales of the<br></br> Enchanted Forest</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   </div>
+			 </div>
+            
 
-                                            </div>
-                        					
-                        				</div>
-                        			</div>
-                        		</li>
-                        	</ul>
-                        </div>
-                  </div>
-
-                  {/* ------------------------------------------------- */}
-                  {/* ------------------------------------------------- */}
+			{/* -------------3------------------------ */}
 
 
 
-                 </div>
+			<div className=" transition duration-300 ease-in-out hover:scale-110 border-[1px] border-gray-300 p-5 rounded-xl ">
+			   <div>
+			   	<p className=" text-3xl font-thin mb-5">On sale</p>
+			   </div>
+			   <div>
+			   <div className=" flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item10.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">The Phoenix<br></br> Chronicles</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   <p className=" mt-5 bg-gray-400 h-[1px] w-[250px]"></p>
+			   </div>
+			   <div>
+			   <div className=" mt-5 flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item11.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Dreams of Avalon</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   <p className=" mt-5 bg-gray-400 h-[1px] w-[250px]"></p>
+			   </div>
+			   <div>
+			   <div className=" mt-5 flex  items-center gap-5">
+				<div>
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item12.png" alt="" />
+				</div>
+				<div>
+					<p className=" font-thin text-xl ">Legends of the<br></br> Dragon Isles</p>
+					<div className=" flex items-center gap-2">
+                    <p>Lauren Asher</p>
+					<div className="rating rating-xs">
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-5"
+                        className="mask mask-star-2 bg-orange-400"
+                        defaultChecked />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
+                    </div>
+					</div>
+					<p className=" font-thin text-xl">$800</p>
+				</div>
+			   </div>
+			   </div>
+			 </div>
+             
 
-              </div>
+
+			{/* ----------------------4------------------------ */}
 
 
 
-            </div>
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+           
             
         </div>
     );

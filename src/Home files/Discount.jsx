@@ -20,7 +20,7 @@ const Discount = () => {
 
 
     return (
-        <div className=" mt-20 mb-10 ml-5 mr-5">
+        <div className=" mt-20  mb-20 ml-5 mr-5">
 
             <div className=' bg-no-repeat bg-cover p-10 rounded-xl ' 
              style={{
