@@ -1,4 +1,5 @@
 import ContactBanner from "./ContactBanner";
+import Que from "./Que";
 
 
 const Contact = () => {
@@ -6,6 +7,7 @@ const Contact = () => {
         <div className=" ">
 
             <ContactBanner></ContactBanner>
+            <Que></Que>
             
         </div>
     );
