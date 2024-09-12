@@ -19,6 +19,18 @@ const Nav = () => {
           <li className=" font-mono" ><NavLink to='/about' >ABOUT</NavLink></li>
           <li className=" font-mono" ><NavLink to='/shop' >SHOP</NavLink></li>
           <li className=" font-mono" ><NavLink to='/blogs' >BLOGS</NavLink></li>
+
+          <div className="dropdown dropdown-left">
+            <div tabIndex={0} role="button" className="btn m-1">Pages</div>
+            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <NavLink><li><a className=" font-mono">SHOP</a></li></NavLink>
+              <NavLink><li><a className=" font-mono">SINGLE PRODUCT</a></li></NavLink>
+              <NavLink><li><a className=" font-mono">SINGLE PRODUCT</a></li></NavLink>
+             
+
+            </ul>
+          </div>
+
           <li className=" font-mono" ><NavLink to='/contact' >CONTACT</NavLink></li>
 
         </div>
