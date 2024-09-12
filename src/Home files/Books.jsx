@@ -42,10 +42,10 @@ const Books = () => {
 			   <div>
 			   <div className=" mt-5 flex  items-center gap-5">
 				<div>
-					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item2.png" alt="" />
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item1.png" alt="" />
 				</div>
 				<div>
-					<p className=" font-thin text-xl ">Echoes of the<br></br> Ancients</p>
+					<p className=" font-thin text-xl ">The Midnight<br></br> Garden</p>
 					<div className=" flex items-center gap-2">
                     <p>Lauren Asher</p>
 					<div className="rating rating-xs">
@@ -68,10 +68,10 @@ const Books = () => {
 			   <div>
 			   <div className=" mt-5 flex  items-center gap-5">
 				<div>
-					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item2.png" alt="" />
+					<img className=" h-[100px] w-[80px]" src="https://demo.templatesjungle.com/bookly/images/product-item3.png" alt="" />
 				</div>
 				<div>
-					<p className=" font-thin text-xl ">Echoes of the<br></br> Ancients</p>
+					<p className=" font-thin text-xl ">Shadow of <br></br>the Serpent</p>
 					<div className=" flex items-center gap-2">
                     <p>Lauren Asher</p>
 					<div className="rating rating-xs">
