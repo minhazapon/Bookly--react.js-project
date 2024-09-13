@@ -12,6 +12,7 @@ import Home from './Home';
 import About from './about file/About';
 import Blogs from './blogs file/Blogs';
 import Contact from './contact file/Contact';
+import Shop from './Shop files/Shop';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>  ,
+      },
+      {
+        path: "/shop",
+        element:   <Shop></Shop>  ,
       },
     ],
   },

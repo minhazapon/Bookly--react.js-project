@@ -23,9 +23,10 @@ const Nav = () => {
           <div className="dropdown dropdown-left">
             <div tabIndex={0} role="button" className="btn m-1">Pages</div>
             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-              <NavLink><li><a className=" font-mono">SHOP</a></li></NavLink>
-              <NavLink><li><a className=" font-mono">SINGLE PRODUCT</a></li></NavLink>
-              <NavLink><li><a className=" font-mono">SINGLE PRODUCT</a></li></NavLink>
+              <NavLink to="/sPost"><li><a className=" font-mono">SINGLE POST</a></li></NavLink>
+              <NavLink to="/sProduct"><li><a className=" font-mono">SINGLE PRODUCT</a></li></NavLink>
+              <NavLink to="/cart"><li><a className=" font-mono">CART</a></li></NavLink>
+              <NavLink to="/check"><li><a className=" font-mono">CHECK OUT</a></li></NavLink>
              
 
             </ul>

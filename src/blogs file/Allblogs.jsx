@@ -33,7 +33,7 @@ const Allblogs = () => {
                <div>
 
                <div className=" flex items-center gap-2 border-[1px] rounded-xl border-gray-400 h-[60px] w-[300px] p-2 ">
-                 <input placeholder="Search" className=" p-2" type="search" name="search" id="" />
+                 <input placeholder="Search" className=" border-white p-2" type="search" name="search" id="" />
                  <img className=" h-[50px]" src="https://cdn-icons-gif.flaticon.com/15164/15164884.gif" alt="" />
                </div>
 
