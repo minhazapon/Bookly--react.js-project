@@ -17,9 +17,11 @@
     "react-clock": "^5.0.0",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
+    "react-hook-form": "^7.53.0",
     "react-live-clock": "^6.1.23-beta",
     "react-moving-text": "^0.0.7",
     "react-router-dom": "^6.26.1",
+    "react-toastify": "^10.0.5",
     "sort-by": "^1.2.0",
     "swiper": "^11.1.12"
   },

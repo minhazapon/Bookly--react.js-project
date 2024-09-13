@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Clock from 'react-clock';
 import 'react-clock/dist/Clock.css';
+import {Link} from 'react-router-dom'
 
 
 
@@ -43,7 +44,9 @@ const Discount = () => {
                        <p className=' mb-3 font-mono'>Current Offer time:</p>
                        <Clock value={value} />
                       </div> 
-                    
+                      
+                      <Link to="/shop" >
+
                       <div>
                        <a href="#_" class=" mt-5  relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#ad2828] rounded-full shadow-md group">
                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#ad2828] group-hover:translate-x-0 ease">
@@ -53,6 +56,9 @@ const Discount = () => {
                        <span class="relative invisible font-mono ">Shop Collection</span>
                        </a>
                       </div>     
+                      
+                      </Link>
+                     
                     
                     
                     </div>

@@ -1,7 +1,47 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+import { useForm } from "react-hook-form"
 
 
 const Que = () => {
+
+    const notifySuccess = () => toast.success("Contact SuccessFully");
+    const notifyError = () => toast.error("Contact Failed");
+  
+    const onSubmit = async () => {
+     
+      
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "e87151e8-7baa-471d-b58a-0bd71fe1cd67");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        notifySuccess();
+        event.target.reset();
+      } else {
+        notifyError();
+        setResult(data.message);
+      }
+    };
+  
+  
+      const {
+          register,
+          handleSubmit,
+          formState: { errors },
+        } = useForm()
+  
+        const onForm = (data) => console.log(data)
+
+    
 
 
     return (
@@ -10,6 +50,7 @@ const Que = () => {
             <div className=" flex-col md:flex-row lg:flex-row flex justify-center gap-10">
 
 
+             <div className=" flex justify-center">
 
              <div>
                 <p className=" text-5xl font-mono">Contact info</p>
@@ -39,6 +80,10 @@ const Que = () => {
                 </div>
              </div>
 
+
+             </div>
+             
+
              {/* ---------------------------------------------- */}
 
 
@@ -51,44 +96,38 @@ const Que = () => {
               <div className=" mt-10">
 
 
-                   <form>
-
+                   <form onSubmit={handleSubmit(onForm, onSubmit ) }>
                     <div>
-
                     <div className=" flex items-center gap-5">
-                        <input placeholder="Enter Your Name Here" className=" p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[200px]" name="name" type="text" />
-                        <input placeholder="Enter Your Email Here" className=" p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[200px]"  type="email" name="email" id="" />
+                        <input placeholder="Enter Your Name Here"  required className=" p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[200px]" name="name" type="text" {...register("name", { required: true })} />
+                        {errors.text && <span>This field is required</span>}
+                        <input placeholder="Enter Your Email Here" required className=" p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[200px]"  type="email" name="email" {...register("email", { required: true })} id="" />
+                        {errors.text && <span>This field is required</span>}
                     </div>
-                    
                     <div>
-                        <input placeholder="Enter Your Number Here" className=" mt-5 p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[420px]" type="number" name="number" id="" />
+                        <input placeholder="Enter Your Number Here" required className=" mt-5 p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[420px]" type="number" {...register("number", { required: true })} name="number" id="" />
+                        {errors.text && <span>This field is required</span>}
                     </div>
-                    
                     <div>
-                        <input placeholder="Enter Your Subject Here" className=" mt-5 p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[420px]" name="subject" type="text" />
+                        <input placeholder="Enter Your Subject Here" required className=" mt-5 p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[420px]" name="subject" {...register("subject", { required: true })} type="text" />
+                        {errors.text && <span>This field is required</span>}
                     </div>
-                    
                     <div>
-                        <textarea placeholder="Enter Your Message Here" className=" mt-5 p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[420px]"  name="message" id=""></textarea>
+                        <textarea placeholder="Enter Your Message Here" required className=" mt-5 p-2 rounded-lg border-[1px] border-gray-500 h-[50px] w-[420px]"  name="message" {...register("message", { required: true })} id=""></textarea>
+                        {errors.text && <span>This field is required</span>}
                     </div>
-                    
-                    <button>
+                    {/* <button>
                     <a href="#_" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-black rounded-lg group">
                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#00CCDD] rounded-full group-hover:w-56 group-hover:h-56"></span>
                     <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
                     <span class="relative w-[342px]">Submit</span>
                     </a>
-                    </button>
+                    </button> */}
+                    <button className=' btn '>submit</button>
                     
                     </div>
-
-
-
                     </form>
-
                     </div>
-             
-        
                    </div>
 
 

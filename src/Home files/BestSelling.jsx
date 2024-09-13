@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 // import required modules
 import { Navigation } from 'swiper/modules';
+import {Link} from 'react-router-dom'
 
 
 const BestSelling = () => {
@@ -15,7 +16,9 @@ const BestSelling = () => {
         <div className=" mb-10 mt-20 ml-5 mr-5">
 
              <div className=' flex items-center justify-between mb-10'>
-                <p className=' text-3xl  font-mono'>Best selling items</p>         
+                <p className=' text-3xl  font-mono'>Best selling items</p>  
+                <Link to="/shop" >
+
                 <div>
                  <a href="#_" class=" mt-5  relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#ad2828] rounded-full shadow-md group">
                  <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#ad2828] group-hover:translate-x-0 ease">
@@ -24,7 +27,10 @@ const BestSelling = () => {
                  <span class="absolute flex items-center justify-center w-full h-full text-[#ad2828] font-mono transition-all duration-300 transform group-hover:translate-x-full ease">View All</span>
                  <span class="relative invisible font-mono ">View All</span>
                  </a>
-                </div>            
+                </div>     
+                
+                </Link>       
+                       
              </div>
  
 
