@@ -124,6 +124,7 @@ const Que = () => {
                     </a>
                     </button> */}
                     <button className=' btn '>submit</button>
+                    <ToastContainer></ToastContainer>
                     
                     </div>
                     </form>
